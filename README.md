@@ -25,6 +25,14 @@ After that, you can instantiate the `AudioBox` adding the array with created aud
 let player = Audiobox(queue: audios, delegate: self)
 ```
 
+## AudioboxDelegate
+
+```swift
+func playerStopped()
+func playerPaused(audio: AudioboxItem)
+func playerPlaying(audio: AudioboxItem)
+```
+
 ## Call actions
 
 AudioBox has some functions that you can call to control your audio queue.
@@ -59,14 +67,6 @@ func add(_ item: AudioboxItem, toPosition position: Int = Int(INT_MAX))
 
 // Remove an item from the queue by index
 func remove(index: Int)
-```
-
-## Delegate methods
-
-```swift
-func playerStopped()
-func playerPaused(audio: AudioboxItem)
-func playerPlaying(audio: AudioboxItem)
 ```
 
 ## Requirements
