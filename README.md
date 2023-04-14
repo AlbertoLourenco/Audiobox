@@ -85,4 +85,6 @@ func remove(index: Int)
 - AVFoundation
 ```
 
+## In action
+
 ![cover](https://raw.githubusercontent.com/AlbertoLourenco/Audiobox/master/github-assets/preview-1.gif)
